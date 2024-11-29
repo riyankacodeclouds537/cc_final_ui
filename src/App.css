@@ -1,0 +1,46 @@
+/* body::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%) rotate(-45deg); 
+  font-size: 78px;
+  color: rgba(0, 0, 0, 0.1); 
+  pointer-events: none;  
+  z-index: -1; 
+  user-select: none;  
+  white-space: nowrap;
+  letter-spacing: 0.2rem;  
+} */
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.content {
+  width:100%;
+  display: flex;
+  gap: 20px;
+
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    width:100%;
+  }
+}
+@media (min-width: 300px) and (max-width: 520px) {
+  .app{
+    width:600px;
+  }
+}
+@media (min-width: 521px) and (max-width: 767px) {
+  .app{
+    width:700px;
+  }
+}
+@media (min-width: 712px) and (max-width: 767px) {
+.app{
+   width:740px;
+}
+}

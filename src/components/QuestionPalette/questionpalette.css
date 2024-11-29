@@ -1,0 +1,131 @@
+.question-palette {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin:20px 7px;
+  }
+  
+  .palette-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    margin-top: 15px;
+  }
+  
+  .palette-button {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    /* width:auto; */
+  }
+  
+  .palette-button.active {
+    background-color: #007acc;
+    color: white;
+  }
+  
+  .legend {
+    margin-top: 20px;
+  }
+  
+  .legend div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .legend span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  .answered {
+    background-color: green;
+  }
+  
+  .not-answered {
+    background-color: red;
+  }
+  
+  .marked {
+    background-color: yellow;
+  }
+  
+  .not-visited {
+    background-color: gray;
+  }
+  .btn-pro-inst{
+    margin:10px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+  }
+  .btn-pro-inst button {
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  @media (max-width: 768px) {
+    .question-palette {
+      margin:15px 8px;
+      width: 94%;
+    }
+  }
+  @media (min-width: 521px) and (max-width: 767px) {
+
+    .question-palette {
+      width: 93%;
+      /* margin: 10px 20px; */
+    }
+  
+    .palette-grid {
+      grid-template-columns: repeat(3, 1fr); /* Adjust grid columns for smaller screens */
+      gap: 10px; /* Increase gap for better spacing */
+    }
+  
+    .btn-pro-inst {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: flex-start; /* Align to the left */
+    }
+  
+    .btn-pro-inst button {
+      width: 100%; /* Buttons take full width */
+      margin-bottom: 10px;
+    }
+  
+  
+    .palette-button {
+      padding: 8px;
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  @media ((min-width: 300px) and (max-width:520px)) {
+  
+  /* Question Palette adjustments */
+  .question-palette {
+    width: 556px; /* Full width */
+    padding: 10px;
+    margin: 10px 12px;
+   
+  }
+
+  .palette-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for buttons */
+    gap: 5px;
+  }
+
+  .palette-button {
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+  }
+}

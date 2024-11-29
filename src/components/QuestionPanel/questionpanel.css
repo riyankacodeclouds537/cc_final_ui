@@ -1,0 +1,194 @@
+/* .question-panel {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 5px;
+    width:80%;
+    height:520px;
+  } */
+  .question-panel {
+    width:50%;
+    height:500px;
+    margin-top:70px;
+    margin-left:25%;
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional: Add border */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    background-color: #fff; /* Optional: Add background color */
+
+  }
+  
+  /* Centering the entire question-panel container within the viewport */
+  
+  
+  
+  .section-tabs {
+    display: flex;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #007acc;
+    background-color: #f0f8ff;
+    cursor: pointer;
+    font-weight: bold;
+
+  }
+  
+  .tab.active {
+    background-color: #007acc;
+    color: white;
+    font-weight: bold;
+  }
+  /* Candidate Info */
+.candidate-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .candidate-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin:15px 10px;
+  }
+  
+  .candidate-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin:15px 10px;
+
+  }
+  
+  .question-content h3 {
+    margin: 15px 0;
+    font-size:20px;
+  }
+  .question-content p {
+    font-size: 19.2px; /* Converted from 1.2rem */
+    line-height: 1.6; /* Keep this as it is if you like the spacing */
+    font-weight: bold; /* Makes the question text stand out */
+}
+
+  
+  .options label {
+    font-size:20px;
+    display: block;
+    margin: 10px 0;
+  }
+  .options input[type="radio"] {
+    margin-right: 12px; /* Adjust this value for the desired gap */
+  }
+  .actions {
+    display: flex;
+    margin-top: auto;
+    align-items: center; /* Align buttons vertically */
+}
+
+.actions .action {
+    padding: 10px 15px;
+    border: none;
+    background-color: #a7daff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight:bold;
+    width:30%;
+    font-size:18px;
+    height:50px;
+}
+
+  .actions .action:hover {
+    background-color: #1395f2;
+  }
+  .actions .mark-review {
+    margin:80px 10px;
+
+  }
+  
+  .actions .previous {
+    margin:80px 10px;
+
+  }
+  .actions .save-next {
+    background-color: #28a745; /* Green for Save & Next */
+    margin-left:auto;
+    color:white;
+  }
+  
+  .actions .save-next:hover {
+    background-color: #218838;
+  }
+  @media (max-width: 768px) {
+    .question-panel {
+      margin:15px 8px;
+      width: 94%;
+    }
+  }
+    @media (min-width: 521px) and (max-width: 767px) {
+
+    .question-panel{
+      width: 93%; 
+      height:600px;
+    }
+  
+    .actions {
+      margin:0 auto;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .actions .action {
+      margin: 15px 0px;
+        padding: 10px 15px;
+        border: none;
+        /* background-color: #a7daff;
+        color: rgb(0, 0, 0); */
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight:bold;
+        width:100%;
+        font-size:18px;
+        height:50px;
+    }
+    
+     
+    .candidate-info {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .candidate-image {
+      margin-bottom: 10px;
+    }
+  }
+  @media ((min-width: 300px) and (max-width:520px)) {
+  
+  /* Question Panel adjustments */
+  .question-panel {
+    width: 556px;
+    padding: 10px;
+    margin: 10px 12px;
+    font-size: 15px;
+    margin-top:170px;
+
+    
+  }
+
+  .question-panel h3 {
+    font-size: 16px; /* Smaller question heading */
+    margin-bottom: 10px;
+  }
+
+  .options {
+    font-size: 14px; /* Adjust options font size */
+    margin-bottom: 10px;
+  }
+}

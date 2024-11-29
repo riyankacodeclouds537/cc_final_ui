@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .footer button {
+    padding: 10px 16px;
+    margin-top:20px;
+    /* background-color: #007acc; */
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--bs-border-radius-pill) !important;;
+    width:25%;
+    height:40px;
+    background: linear-gradient(33deg,#00c0ff 4%,#0c90d0 91%);
+  }
+  .footer button:hover {
+    background: linear-gradient(33deg, #0c90d0 4%, #00c0ff 91%);
+    color: black;
+    transform: scale(1.05); 
+}
+@media (min-width: 300px) and (max-width: 520px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+  }
+  .footer button {
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--bs-border-radius-pill) !important;
+    width: 50%;
+    height: 40px;
+    background: linear-gradient(33deg, #00c0ff 4%, #0c90d0 91%);
+    margin: 0 auto;
+    display: block; 
+  }
+}
